@@ -3,10 +3,6 @@ const fs = require('fs'),
       
       const port = 3000
       let jsonData = []
-// fs.readFile('customer-data.csv', (error, data) => {
-//     if(error) throw error;
-//     // console.log(data.toString())
-//     console.log(data.toString())
 
     const csvFilePath='customer-data.csv'
     // const csv=require('csvtojson')
@@ -22,6 +18,6 @@ const fs = require('fs'),
             if(err) throw err;
             console.log('done')
         })
-        // console.log('done')
+        
     })
     
