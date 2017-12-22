@@ -16,7 +16,7 @@ const fs = require('fs'),
         jsonData.push(JSON.stringify(jsonObj))
         
     })
-    .on('done',(error)=>{
+    .on('done',() => {
         // jsonData = JSON.parse(jsonData)
         fs.writeFile('customer-data.json', '['+jsonData +']', (err) => {
             if(err) throw err;
@@ -25,19 +25,3 @@ const fs = require('fs'),
         // console.log('done')
     })
     
-
-    
-    
-    
-    
-    // csv({noheader:true})
-    // .fromString(data.toString())
-    // .on('csv', (csvRow) => {
-    //     // console.log(csvRow)
-    //     jsonData.push(csvRow)
-    // })
-    // .on('done', () => {
-    //     console.log(jsonData)
-    // })
-// })
-
